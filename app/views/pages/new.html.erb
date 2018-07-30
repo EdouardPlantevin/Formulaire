@@ -1,0 +1,26 @@
+<h1>Créer vôtre profil</h1>
+
+
+<%= form_tag "/new", method: "post" do %>
+<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+  <p>
+    <span class="obligatoire">*</span>
+    <input type="text" name="username" placeholder="Vôtre nom">
+  </p>
+  <p>
+    <span class="obligatoire">*</span>
+    <input type="text" name="email" placeholder="Email">
+  </p>
+  <p>
+    <span class="non_obligatoire">*</span>
+    <input type="text" name="bio" placeholder="Bio">
+  </p>
+  <p><span class="obligatoire">*</span> <small>champs obligatoire</small></p>
+  <p>
+    <span class="non_obligatoire">*</span>
+    <input type="submit" value="Créer vôtre profil">
+  </p>
+<% end %>
+
+
+<p>Déjà <%= @users.length %> se sont déjà inscrite</p>
