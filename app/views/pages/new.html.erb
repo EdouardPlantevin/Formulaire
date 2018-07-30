@@ -22,5 +22,10 @@
   </p>
 <% end %>
 
-
-<p>Déjà <%= @users.length %> se sont déjà inscrite</p>
+<% if @users.length == 0 %>
+  <p>Sois le premier à t'inscrire !!!</p>
+<% elsif @users.length == 1 %>
+  <p>Déjà <%= @users.length %> personne c'est déjà inscrite</p>
+<% else %>
+  <p>Déjà <%= @users.length %> personnes se sont déjà inscrites</p>
+<% end %>
