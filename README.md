@@ -1,24 +1,27 @@
-# README
+<h1>Formulaire Mardi</h1>
+<h4>Réalisation by Edouard, Léa</h4>
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Heroku (lien en lien)
+    >  https://formthp.herokuapp.com/
 
-Things you may want to cover:
+Github
 
-* Ruby version
+Etape 1:   
 
-* System dependencies
+    > git clone https://github.com/SatanPetitCoeur/Formulaire.git
 
-* Configuration
+Etape 2: 
 
-* Database creation
+    > cd Formulaire
+    
+Etape 3:
 
-* Database initialization
+    > rake db:migrate 
+     
+Etape 4:
 
-* How to run the test suite
+    > rails serveur
+   
+Etape 5:  
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+    > aller sur :  http://localhost:3000/
