@@ -1,6 +1,6 @@
 class PagesController < ApplicationController
   def index
-    @user = User.all
+    @users = User.all
   end
 
   def new
@@ -8,8 +8,15 @@ class PagesController < ApplicationController
   end
 
   def create
-    User.create username: params[:username], email: params[:email], bio: params[:bio]
-    redirect_to "/new"
+    @user = User.create username: params[:username], email: params[:email], bio: params[:bio]
+    if @user.save
+      redirect_to "/new"
+    else
+      redirect_to "/error"
+    end
+  end
+
+  def error
   end
 
   def profil

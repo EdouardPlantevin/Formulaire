@@ -14,4 +14,6 @@ class User < ApplicationRecord
   validates :email, uniqueness: {
     mesagge: "cette e-mail est déjà pris )="
   }
+
+  validates :username, format: { with: /\A[a-zA-Z0-9]+\Z/ }
 end
