@@ -1,10 +1,10 @@
 <h1>Formulaire Mardi</h1>
 <h4>Réalisation by Edouard, Léa</h4>
 
-Heroku (lien du site)
+<h5>Heroku (lien du site)</h5>
     >  <a href="https://formthp.herokuapp.com/">Formulaire en ligne</a>
 
-Github
+<h5>Github</h5>
 
 Etape 1:   
 
