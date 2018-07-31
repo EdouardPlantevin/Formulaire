@@ -10,4 +10,8 @@ class User < ApplicationRecord
   validates :username, uniqueness: {
     mesagge: "ce nom est déjà pris )="
   }
+
+  validates :email, uniqueness: {
+    mesagge: "cette e-mail est déjà pris )="
+  }
 end

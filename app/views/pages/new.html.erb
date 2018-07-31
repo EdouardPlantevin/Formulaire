@@ -29,3 +29,7 @@
 <% else %>
   <p>Déjà <%= @users.length %> personnes se sont déjà inscrites</p>
 <% end %>
+
+<% @users.each do |user| %>
+    <p><a href="/new/<%= user.id %>">Visiter le profil de <%= user.username %></a><p>
+ <% end %>
