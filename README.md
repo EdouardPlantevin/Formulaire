@@ -2,7 +2,7 @@
 <h4>Réalisation by Edouard, Léa</h4>
 
 Heroku (lien en lien)
-    >  https://formthp.herokuapp.com/
+    >  <a href="https://formthp.herokuapp.com/">lol</a>
 
 Github
 
